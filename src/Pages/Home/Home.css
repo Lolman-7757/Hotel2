@@ -5,7 +5,7 @@
     height: 100vh;
     position: relative;
     /* background-image: url("/home.jpg"); */
-    background-position: bottom center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -46,8 +46,8 @@
 }
 
 .header img {
-    width: 190px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
 }
 
 .header_navigation {

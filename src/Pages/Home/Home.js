@@ -229,19 +229,19 @@ function Home() {
                         <li style={{backgroundImage: `url('/amenity2.jpg')`}}>
                             <div className='amenity_layout'>{t("amenity_advant2")}</div>
                         </li>
-                        <li>
+                        <li style={{backgroundImage: `url('/amenity3.jpg')`}}>
                             <div className='amenity_layout'>{t("amenity_advant3")}</div>
                         </li>
                         <li style={{backgroundImage: `url('/amenity4.jpg')`}}>
                             <div className='amenity_layout'>{t("amenity_advant4")}</div>
                         </li>
-                        <li>
+                        <li style={{backgroundImage: `url('/amenity5.jpg')`}}>
                             <div className='amenity_layout'>{t("amenity_advant5")}</div>
                         </li>
                         <li>
                             <div className='amenity_layout'>{t("amenity_advant6")}</div>
                         </li>
-                        <li>
+                        <li style={{backgroundImage: `url('/amenity7.jpg')`}}>
                             <div className='amenity_layout'>{t("amenity_advant7")}</div>
                         </li>
                         <li style={{backgroundImage: `url('/amenity8.jpg')`}}>
@@ -265,14 +265,14 @@ function Home() {
                 <h2 className='page_subtitle'>{t("gallery_subtitle")}</h2>
                 <ul className='gallery_swiper'>
                     <Slider {...settings}>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/slide3-free-img.jpg' /></li>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-glasses.jpg' /></li>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-dish.jpg' /></li>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/slide5-free-img.jpg' /></li>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-massage.jpg' /></li>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/slide1-free-img.jpg' /></li>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/slide2-free-img.jpg' /></li>
-                        <li><img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-cooking.jpg' /></li>
+                        <li><img src='/gallery1.jpg' /></li>
+                        <li><img src='/gallery2.jpg' /></li>
+                        <li><img src='/gallery3.jpg' /></li>
+                        <li><img src='/gallery4.jpg' /></li>
+                        <li><img src='/gallery5.jpg' /></li>
+                        <li><img src='/gallery6.jpg' /></li>
+                        <li><img src='/gallery7.jpg' /></li>
+                        <li><img src='/gallery8.jpg' /></li>
                     </Slider>
                 </ul>
             </section>
@@ -283,7 +283,7 @@ function Home() {
                 <ul className='packages_block'>
                     <li>
                         <div className='packages_img'>
-                            <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-single-room.jpg' alt='room' />
+                            <img src='/room1.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
                                     <p>$ 50 / {t("packages_night")}</p>
@@ -303,7 +303,7 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                            <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-single-room.jpg' alt='room' />
+                        <img src='/room2.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
                                     <p>$ 72 / {t("packages_night")}</p>
@@ -323,7 +323,7 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                            <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-single-room.jpg' alt='room' />
+                        <img src='/room3.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
                                     <p>$ 108 / {t("packages_night")}</p>
@@ -343,7 +343,7 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                            <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-single-room.jpg' alt='room' />
+                        <img src='/room4.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
                                     <p>$ 225 / {t("packages_night")}</p>
@@ -363,7 +363,7 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                            <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2020/05/hotel-single-room.jpg' alt='room' />
+                        <img src='/room5.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
                                     <p>$ 135 / {t("packages_night")}</p>
@@ -373,6 +373,26 @@ function Home() {
                         <div className='packages_info'>
                             <div className='packages_title'>{t("packages5_title")}</div>
                             <div className='packages_subtitle'>{t("packages5_subtitle")}</div>
+                            <ul className='packages_svg'>
+                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
+                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
+                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
+                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='packages_img'>
+                        <img src='/room6.jpg' alt='room' />
+                            <div className='packages_layout'>
+                                <div className='packages_layout-text'>
+                                    <p>$ 135 / {t("packages_night")}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='packages_info'>
+                            <div className='packages_title'>{t("packages6_title")}</div>
+                            <div className='packages_subtitle'>{t("packages6_subtitle")}</div>
                             <ul className='packages_svg'>
                                 <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
                                 <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />

@@ -9,7 +9,7 @@ footer {
 }
 .footer_logo{
     width: 300px;
-    height: 150px;
+    height: 250px;
 }
 .footer_copyright{
     width: 100%;
@@ -72,6 +72,9 @@ footer {
     justify-content: space-between;
     margin-bottom: 100px;
 }
+.footer_contacts a{
+    color: white;
+}
 .footer_numbers{
     display: flex;
     flex-direction: column;
@@ -107,5 +110,12 @@ footer {
         margin-left: 0;
         font-size: 1.1rem;
         margin-top: 10px;
+    }
+    .footer_copyright{
+        flex-direction: column;
+    }
+    .footer_copyright h2:nth-child(2){
+        margin-top: 20px;
+        text-align: center;
     }
 }

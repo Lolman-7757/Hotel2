@@ -9,7 +9,7 @@ function Footer() {
     const { t } = useTranslation(["footer"])
     return (
         <footer>
-            <img className='footer_logo' src='logo.png' alt='logo' />
+            <img className='footer_logo' src='logo2.png' alt='logo' />
             <ul className='footer_navigation'>
                 <li><a href='#about'>{t("about_title")}</a></li>
                 <li><a href='#amenity'>{t("amenity_title")}</a></li>
@@ -19,14 +19,14 @@ function Footer() {
             </ul>
             <div className='footer_contacts'>
                 <div className='footer_numbers'>
-                    <a href='tel:+998901568088'>+998901568088</a>
-                    <a href='tel:+998692277979'>+998692277979</a>
+                    <a href='tel:+998955094066'>+998955094066</a>
+                    <a href='tel:+998937202269'>+998937202269</a>
                 </div>
                 <div className='footer_media'>
-                    <a href='https://www.instagram.com/musavvir_hotell'><BsInstagram /></a>
-                    <a href='https://t.me/hotel_musavvir'><BsTelegram /></a>
+                    <a href='https://www.instagram.com/abu_ali_ibn_sino_sanatoriysi/'><BsInstagram /></a>
+                    <a href='https://t.me/+SBkQGSAwVpgFgBAE'><BsTelegram /></a>
                 </div>
-                <p className='footer_adress'>{t("address")}</p>
+                <a href='https://maps.google.com/maps?q=39.746448,66.416205&ll=39.746448,66.416205&z=16' className='footer_adress'>{t("address")}</a>
             </div>
             <div className='footer_copyright'>
                 <h2>Copyright 2023</h2>
