@@ -90,6 +90,9 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
+.home .classic_btn{
+    margin-top: 20px;
+}
 
 .classic_btn {
     cursor: pointer;

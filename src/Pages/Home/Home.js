@@ -104,7 +104,7 @@ function Home() {
                     }
                 </div>
             </header>
-            <section className='home' style={{backgroundImage : `url('/home.jpg')`}}>
+            <section className='home' style={{ backgroundImage: `url('/home.jpg')` }}>
                 <div className='home_overlay'></div>
                 <div className='home_wrapper'>
                     <div className='header'>
@@ -140,7 +140,7 @@ function Home() {
                     <div className='header_logo'>
                         <h1 className='header_title'>{t("home_title")}</h1>
                         <h3 className='header_subtitle'>{t("home_subtitle")}</h3>
-                        <button className='classic_btn header_button'>{t("home_button")} <MdKeyboardArrowRight /></button>
+                        <a href='tel:+998955094066' className='classic_btn'>{t("home_button")} <MdKeyboardArrowRight /></a>
                     </div>
                 </div>
                 <nav className={navActive ? 'drop drop-active' : 'drop'}>
@@ -223,28 +223,28 @@ function Home() {
                         </li>
                     </ul>
                     <ul className='amenity_hostel'>
-                        <li style={{backgroundImage: `url('/amenity1.jpg')`}}>
+                        <li style={{ backgroundImage: `url('/amenity1.jpg')` }}>
                             <div className='amenity_layout'>{t("amenity_advant1")}</div>
                         </li>
-                        <li style={{backgroundImage: `url('/amenity2.jpg')`}}>
+                        <li style={{ backgroundImage: `url('/amenity2.jpg')` }}>
                             <div className='amenity_layout'>{t("amenity_advant2")}</div>
                         </li>
-                        <li style={{backgroundImage: `url('/amenity3.jpg')`}}>
+                        <li style={{ backgroundImage: `url('/amenity3.jpg')` }}>
                             <div className='amenity_layout'>{t("amenity_advant3")}</div>
                         </li>
-                        <li style={{backgroundImage: `url('/amenity4.jpg')`}}>
+                        <li style={{ backgroundImage: `url('/amenity4.jpg')` }}>
                             <div className='amenity_layout'>{t("amenity_advant4")}</div>
                         </li>
-                        <li style={{backgroundImage: `url('/amenity5.jpg')`}}>
+                        <li style={{ backgroundImage: `url('/amenity5.jpg')` }}>
                             <div className='amenity_layout'>{t("amenity_advant5")}</div>
                         </li>
                         <li>
                             <div className='amenity_layout'>{t("amenity_advant6")}</div>
                         </li>
-                        <li style={{backgroundImage: `url('/amenity7.jpg')`}}>
+                        <li style={{ backgroundImage: `url('/amenity7.jpg')` }}>
                             <div className='amenity_layout'>{t("amenity_advant7")}</div>
                         </li>
-                        <li style={{backgroundImage: `url('/amenity8.jpg')`}}>
+                        <li style={{ backgroundImage: `url('/amenity8.jpg')` }}>
                             <div className='amenity_layout'>{t("amenity_advant8")}</div>
                         </li>
                     </ul>
@@ -255,7 +255,7 @@ function Home() {
                             <h2 className='amenity_escape-title'>{t("amenity_advice1")}</h2>
                             <h2 className='amenity_escape-subtitle'>{t("amenity_advice2")}</h2>
                         </div>
-                        <button className='classic_btn'>{t("home_button")} <MdKeyboardArrowRight /></button>
+                        <a href='tel:+998955094066' className='classic_btn'>{t("home_button")} <MdKeyboardArrowRight /></a>
                     </div>
                 </div>
             </section>
@@ -286,7 +286,7 @@ function Home() {
                             <img src='/room1.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>$ 50 / {t("packages_night")}</p>
+                                    <p>200.000 {t("packages_price")} / {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -303,10 +303,10 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                        <img src='/room2.jpg' alt='room' />
+                            <img src='/room2.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>$ 72 / {t("packages_night")}</p>
+                                    <p>195.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -323,10 +323,10 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                        <img src='/room3.jpg' alt='room' />
+                            <img src='/room3.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>$ 108 / {t("packages_night")}</p>
+                                    <p>180.000  {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -343,10 +343,10 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                        <img src='/room4.jpg' alt='room' />
+                            <img src='/room4.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>$ 225 / {t("packages_night")}</p>
+                                    <p>220.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -363,10 +363,10 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                        <img src='/room5.jpg' alt='room' />
+                            <img src='/room5.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>$ 135 / {t("packages_night")}</p>
+                                    <p>300.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -383,10 +383,10 @@ function Home() {
                     </li>
                     <li>
                         <div className='packages_img'>
-                        <img src='/room6.jpg' alt='room' />
+                            <img src='/room6.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>$ 135 / {t("packages_night")}</p>
+                                    <p>250.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
