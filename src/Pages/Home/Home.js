@@ -265,14 +265,14 @@ function Home() {
                 <h2 className='page_subtitle'>{t("gallery_subtitle")}</h2>
                 <ul className='gallery_swiper'>
                     <Slider {...settings}>
-                        <li><img src='/gallery1.jpg' /></li>
-                        <li><img src='/gallery2.jpg' /></li>
-                        <li><img src='/gallery3.jpg' /></li>
-                        <li><img src='/gallery4.jpg' /></li>
-                        <li><img src='/gallery5.jpg' /></li>
-                        <li><img src='/gallery6.jpg' /></li>
-                        <li><img src='/gallery7.jpg' /></li>
-                        <li><img src='/gallery8.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery1.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery2.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery3.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery4.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery5.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery6.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery7.jpg' /></li>
+                        <li><img alt="GalleryPhoto" src='/gallery8.jpg' /></li>
                     </Slider>
                 </ul>
             </section>
@@ -286,7 +286,7 @@ function Home() {
                             <img src='/room1.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>200.000 {t("packages_price")} / {t("packages_night")}</p>
+                                    <p>325.000 {t("packages_price")} / {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -294,10 +294,10 @@ function Home() {
                             <div className='packages_title'>{t("packages1_title")}</div>
                             <div className='packages_subtitle'>{t("packages1_subtitle")}</div>
                             <ul className='packages_svg'>
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
                             </ul>
                         </div>
                     </li>
@@ -306,7 +306,7 @@ function Home() {
                             <img src='/room2.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>195.000 {t("packages_price")}/ {t("packages_night")}</p>
+                                    <p>360.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -314,10 +314,10 @@ function Home() {
                             <div className='packages_title'>{t("packages2_title")}</div>
                             <div className='packages_subtitle'>{t("packages2_subtitle")}</div>
                             <ul className='packages_svg'>
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
                             </ul>
                         </div>
                     </li>
@@ -326,7 +326,7 @@ function Home() {
                             <img src='/room3.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>180.000  {t("packages_price")}/ {t("packages_night")}</p>
+                                    <p>275.000  {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +346,7 @@ function Home() {
                             <img src='/room4.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>220.000 {t("packages_price")}/ {t("packages_night")}</p>
+                                    <p>250.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -354,10 +354,10 @@ function Home() {
                             <div className='packages_title'>{t("packages4_title")}</div>
                             <div className='packages_subtitle'>{t("packages4_subtitle")}</div>
                             <ul className='packages_svg'>
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
                             </ul>
                         </div>
                     </li>
@@ -366,7 +366,7 @@ function Home() {
                             <img src='/room5.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>300.000 {t("packages_price")}/ {t("packages_night")}</p>
+                                    <p>450.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -374,10 +374,10 @@ function Home() {
                             <div className='packages_title'>{t("packages5_title")}</div>
                             <div className='packages_subtitle'>{t("packages5_subtitle")}</div>
                             <ul className='packages_svg'>
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity2' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity3' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity4' />
                             </ul>
                         </div>
                     </li>
@@ -386,7 +386,7 @@ function Home() {
                             <img src='/room6.jpg' alt='room' />
                             <div className='packages_layout'>
                                 <div className='packages_layout-text'>
-                                    <p>250.000 {t("packages_price")}/ {t("packages_night")}</p>
+                                    <p>220.000 {t("packages_price")}/ {t("packages_night")}</p>
                                 </div>
                             </div>
                         </div>
@@ -394,10 +394,10 @@ function Home() {
                             <div className='packages_title'>{t("packages6_title")}</div>
                             <div className='packages_subtitle'>{t("packages6_subtitle")}</div>
                             <ul className='packages_svg'>
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
-                                <img src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/beer.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/coffee.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/restaurant-icon.svg' alt='amenity' />
+                                <img alt="ico" src='https://websitedemos.net/hotel-02/wp-content/uploads/sites/42/2021/03/room-service.svg' alt='amenity' />
                             </ul>
                         </div>
                     </li>
