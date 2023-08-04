@@ -33,9 +33,9 @@ function Header() {
                     <button className='nav-header_btn' onClick={() => setNavActive(false)}><RxCross1 /></button>
                 </div>
                 <ul className='nav-list'>
-                    <li><a href='#about'>Biz Haqimizda</a></li>
-                    <li><a href='#concerts'>Konsertlar</a></li>
-                    <li><a href='#contact'>Kontaktlar</a></li>
+                    <li  onClick={() => setNavActive(false)}><a href='#about'>Biz Haqimizda</a></li>
+                    <li  onClick={() => setNavActive(false)}><a href='#concerts'>Konsertlar</a></li>
+                    <li  onClick={() => setNavActive(false)}><a href='#contact'>Kontaktlar</a></li>
                 </ul>
                 <div className='nav-end'>
                     <ul className='header_lang'>
