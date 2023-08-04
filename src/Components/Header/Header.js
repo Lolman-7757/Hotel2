@@ -13,10 +13,9 @@ function Header() {
             <img className='header_logo' alt='logo' src='./logo.png' />
             <div className='header_mid'>
                 <ul className='header_nav'>
-                    <li><a href='#'>Biz Haqimizda</a></li>
-                    <li><a href='#'>Concertlar</a></li>
-                    <li><a href='#'>Tadbirlar</a></li>
-                    <li><a href='#'>Kontaktlar</a></li>
+                    <li><a href='#about'>Biz Haqimizda</a></li>
+                    <li><a href='#concerts'>Concertlar</a></li>
+                    <li><a href='#contact'>Kontaktlar</a></li>
                 </ul>
                 <ul className='header_lang'>
                     <li>EN</li>
@@ -34,10 +33,9 @@ function Header() {
                     <button className='nav-header_btn' onClick={() => setNavActive(false)}><RxCross1 /></button>
                 </div>
                 <ul className='nav-list'>
-                    <li><a href='#'>Biz Haqimizda</a></li>
-                    <li><a href='#'>Concertlar</a></li>
-                    <li><a href='#'>Tadbirlar</a></li>
-                    <li><a href='#'>Kontaktlar</a></li>
+                    <li><a href='#about'>Biz Haqimizda</a></li>
+                    <li><a href='#concerts'>Concertlar</a></li>
+                    <li><a href='#contact'>Kontaktlar</a></li>
                 </ul>
                 <div className='nav-end'>
                     <ul className='header_lang'>

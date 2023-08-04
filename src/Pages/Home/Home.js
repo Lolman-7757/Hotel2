@@ -85,6 +85,18 @@ function Home() {
             time: "14:00 va 18:00",
             img: "./concert3.jpg"
         },
+        {
+            title: "Million",
+            date: "6 AVGUST",
+            time: "14:00 va 18:00",
+            img: "./concert2.jpg"
+        },
+        {
+            title: "Xamdam Sobirov",
+            date: "23 SENTABR",
+            time: "14:00 va 18:00",
+            img: "./concert3.jpg"
+        }
     ]
 
     // LANGUAGE
@@ -116,7 +128,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className='about'>
+            <section className='about' id='about'>
                 <div className='about_layout'>
                     <h2 className='page_title'>Biz Haqimizda</h2>
                     <ul className='home_tour-wrapper'>
@@ -145,7 +157,7 @@ function Home() {
                     </ul>
                 </div>
             </section>
-            <section className='concerts'>
+            <section className='concerts' id='concerts'>
                 <div className='page_title'>Kelayotgan Koncertlar</div>
                 <div className='concerts_wrapper'>
                     {

@@ -8,7 +8,7 @@ function Footer() {
     // LANGUAGE
     const { t } = useTranslation(["footer"])
     return (
-        <footer>
+        <footer id='contact'>
             <div className='footer_layout'></div>
             <section className="contact">
                 <div className='contact-mid'>
