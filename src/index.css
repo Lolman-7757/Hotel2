@@ -4,7 +4,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* #root{
+  justify-content: space-between !important;
+  height: 100%;
+} */
 body,
 #root {
 

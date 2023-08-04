@@ -1,15 +1,78 @@
 footer {
+    position: relative;
     width: 100%;
     margin-top: 100px;
-    display: flex;
-    padding-top: 70px;
-    flex-direction: column;
-    align-items: center;
-    background-color: #2B161B;
+    background-size: cover;
+    background-image: url('https://abrakadabra.fun/uploads/posts/2022-01/thumbs/1641897943_7-abrakadabra-fun-p-uzbekskie-uzori-i-ornamenti-11.jpg');
 }
-.footer_logo{
-    width: 300px;
-    height: 250px;
+.footer_layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.797);
+}
+.contact .page_title{
+    margin-bottom: 10px;
+}
+.contact{
+    display:flex;
+    align-items:flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    z-index: 100;
+    position: relative;
+}
+.contact-mid{
+    display: flex;
+    flex-direction: column;
+}
+.contact_line{
+    background-color: white;
+    width: 150px;
+    height: 3px;
+    margin-bottom: 10px;
+}
+.contact-mid a{
+    color: white;
+    transition: linear all .3s;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.contact-mid a:hover{
+    text-decoration: underline;
+}
+.contact-phone{
+    display: flex;
+    flex-direction: row;
+    margin-left: -20px;
+}
+.contact-phone li{
+    margin-left: 20px;
+}
+.contact-address{
+    margin-right: 30px;
+    margin-top: 50px;
+}
+.contact-title{
+    font-size: 1.5rem;
+}
+
+.contact-subtitle{
+    margin-top: 10px;
+}
+.contact-address a{
+    color: #9b5d46;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    transition: linear all .3s;
+}
+.contact-address a:hover{
+    text-decoration: underline;
 }
 .footer_copyright{
     width: 100%;
@@ -19,6 +82,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
+    z-index: 2;
+    position: relative;
 }
 .footer_copyright h2{
     font-weight: 500;
@@ -28,94 +93,27 @@ footer {
     color: white;
     text-decoration: underline;
 }
-.footer_navigation{
-    margin-left: -20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.footer_navigation li{
-    margin-left: 20px;
-}
-.footer_navigation li a{
-    color: white;
-    transition: linear all .2s;
-}
-.footer_navigation li a:hover{
-    color: #EF4D48;
-    text-decoration: underline;
-}
-.footer_media{
-    margin-left: -20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.footer_media svg{
-    margin-left: 20px;
-    color: white;
-    font-size: 2rem;
-    transition: linear all;
-}
-.footer_media svg:hover{
-    transform: scale(1.1);
-    color: #EF4D48;
-}
-.footer_contacts{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width:700px;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-.footer_contacts a{
-    color: white;
-}
-.footer_numbers{
-    display: flex;
-    flex-direction: column;
-}
-.footer_numbers a{
-    color: white;
-}
-.footer_adress{
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
+@media(max-width: 992px){
+    .contact{
+        flex-direction: column;
+        padding-left: 20px;
+    }
 }
 @media(max-width:768px){
-    .footer_contacts{
-        flex-direction: column;
-    }
-    .footer_media{
-        margin-top: 30px;
-    }
-    .footer_adress{
-        margin-top: 30px;
-        text-align: center;
-        width: 90%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    .footer_navigation{
-        flex-direction: column;
-        margin-left: 0;
-    }
-    .footer_navigation li{
-        margin-left: 0;
-        font-size: 1.1rem;
-        margin-top: 10px;
-    }
     .footer_copyright{
         flex-direction: column;
     }
     .footer_copyright h2:nth-child(2){
         margin-top: 20px;
         text-align: center;
+    }
+}
+@media(max-width:576px){
+    .contact-phone{
+        flex-wrap: wrap;
+        margin-top: -10px;
+    }
+    .contact-phone li{
+        margin-top: 10px;
     }
 }
