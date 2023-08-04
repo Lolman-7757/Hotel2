@@ -123,7 +123,7 @@ function Home() {
                 <div className='home_overlay'></div>
                 <div className='home_wrapper'>
                     <div className='home_mid'>
-                        <h1>ISLAM KARIMOV</h1>
+                        <h1>ISLOM KARIMOV</h1>
                         <h2>NOMIDAGI SAN'AT SAROYI</h2>
                     </div>
                 </div>
@@ -158,7 +158,7 @@ function Home() {
                 </div>
             </section>
             <section className='concerts' id='concerts'>
-                <div className='page_title'>Kelayotgan Koncertlar</div>
+                <div className='page_title'>Kelayotgan Konsertlar</div>
                 <div className='concerts_wrapper'>
                     {
                         concerts.map(concert =>(

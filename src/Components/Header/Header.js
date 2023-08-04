@@ -14,7 +14,7 @@ function Header() {
             <div className='header_mid'>
                 <ul className='header_nav'>
                     <li><a href='#about'>Biz Haqimizda</a></li>
-                    <li><a href='#concerts'>Concertlar</a></li>
+                    <li><a href='#concerts'>Konsertlar</a></li>
                     <li><a href='#contact'>Kontaktlar</a></li>
                 </ul>
                 <ul className='header_lang'>
@@ -34,7 +34,7 @@ function Header() {
                 </div>
                 <ul className='nav-list'>
                     <li><a href='#about'>Biz Haqimizda</a></li>
-                    <li><a href='#concerts'>Concertlar</a></li>
+                    <li><a href='#concerts'>Konsertlar</a></li>
                     <li><a href='#contact'>Kontaktlar</a></li>
                 </ul>
                 <div className='nav-end'>
