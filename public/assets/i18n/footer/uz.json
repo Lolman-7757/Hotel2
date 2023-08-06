@@ -1,9 +1,8 @@
 {
-    "about_title": "Biz haqimizda",
-    "amenity_title": "Qulayliklar",
-    "gallery_title": "Galereya",
-    "packages_title": "Paketlar",
-    "booking_title": "Bronlash",
-    "address": "Samarqand,Nurobod tumani,Nurbuloq kochasi",
+    "footer_title": "Kontaktlar",
+    "appeal": "Murojaat",
+    "address_title": "Adres",
+    "address_info": "Farg'ona sh.Yuksalish kochasi, 59 uy",
+    "map": "Xaritada koring",
     "copyright": "Saytni ishlab chiqish va quvvatlash"
 }

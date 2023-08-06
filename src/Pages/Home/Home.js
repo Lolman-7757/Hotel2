@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import i18next, { changeLanguage } from 'i18next';
+import axios from 'axios';
 
 // STYLE
 import './Home.css'
@@ -46,76 +47,50 @@ function Home() {
         ]
     };
     // LANGUAGE
+
+    const [concerts, setConcerts] = useState([])
+    const [lang, setLang] = useState(window.localStorage.getItem('i18nextLng'))
+    const { i18n, t } = useTranslation(["home"])
+    useEffect(() => {
+        axios.get('https://backend4asad.pythonanywhere.com/api/event')
+            .then(res => setConcerts(res.data))
+            .catch(err => console.log(err))
+        setLang(window.localStorage.getItem('i18nextLng'))
+        // console.log(lang)
+    }, [])
+    // LANGUAGE
+    const [navActive, setNavActive] = useState(false)
+    const [tourActive, setTourActive] = useState(0);
     const tours = [
         {
-            title: "San'at Saroyi",
-            subtitle: "Ислом Каримов номидаги Фарғона вилоят театр ва концерт саройи Ўзбекистон Республикаси Вазирлар Махкамасининг 2014 йил 25 июндаги “Фарғона вилоят Театр-концерт саройи фаолиятини ташкил этиш тўғрисида”ги 170-сонли  қарорига асосан ташкил этилган.",
+            title: t("about_title1"),
+            subtitle: t("about_subtitle1"),
             img: './slider1.jpg',
             phone: "tel:+998945552200"
         },
         {
-            title: "Saroy sig'imi",
-            subtitle: "Театр ва концерт саройи томошабинлар зали 925 нафар томошабинга мўлжалланган. Театр ва концерт саройи ёзги амфитеатри 643 нафар томошабинга мўлжалланган. Театр ва концерт саройи саньатнинг концерт, спектакль ва кино намойишлари учун барча шароит ва қулайликларга эга.",
+            title: t("about_title2"),
+            subtitle: t("about_subtitle2"),
             img: './slider2.jpg',
             phone: "tel:+998955552200"
         },
         {
-            title: "Bino tuzilishi",
-            subtitle: "Санъаткорлар учун 40 кишилик 14 та артистлар хонаси мавжуд бўлиб, ювиниш хоналари, юмшоқ мебеллар билан жиҳозланган. Театр ва концерт саройида маънавият хонаси, кутубхона, рақс ва тўгараклар учун 2 та кичик зал, овоз ёзиш студияси хамда оркестр чолғучилари учун яма, рассомлар устахонаси ва чевархона фаолият кўрсатади.",
+            title: t("about_title3"),
+            subtitle: t("about_subtitle3"),
             img: './slider3.jpg',
             phone: "tel:+998732432200"
         },
     ]
-    const concerts = [
-        {
-            title: "Dildora Niyozova",
-            date: "9-10 SENTABR",
-            time: "14:00 va 18:00",
-            img: "./concert1.jpg"
-        },
-        {
-            title: "Million",
-            date: "6 AVGUST",
-            time: "14:00 va 18:00",
-            img: "./concert2.jpg"
-        },
-        {
-            title: "Xamdam Sobirov",
-            date: "23 SENTABR",
-            time: "14:00 va 18:00",
-            img: "./concert3.jpg"
-        },
-        {
-            title: "Million",
-            date: "6 AVGUST",
-            time: "14:00 va 18:00",
-            img: "./concert2.jpg"
-        },
-        {
-            title: "Xamdam Sobirov",
-            date: "23 SENTABR",
-            time: "14:00 va 18:00",
-            img: "./concert3.jpg"
+    function showData () {
+        if (lang === "en") {
+            return concerts.map(concert => {return(<Card title={concert.title_en} date={concert.date_en} time={concert.time_en} img={concert.image} />)})
+        } else if (lang === "ru") {
+            console.log("ru")
+            return concerts.map(concert => {return(<Card title={concert.title_ru} date={concert.date_ru} time={concert.time_ru} img={concert.image} />)})
+        } else if (lang === "uz") {
+            console.log("uz")
+            return concerts.map(concert => {return(<Card title={concert.title_uz} date={concert.date_uz} time={concert.time_uz} img={concert.image} />)})
         }
-    ]
-
-    // LANGUAGE
-    const { i18n, t } = useTranslation(["home"])
-    useEffect(() => {
-        if (localStorage.getItem("i18nextLng") > 2) {
-            i18next.changeLanguage("en")
-        }
-    }, [])
-    const [navActive, setNavActive] = useState(false)
-    const [tourActive, setTourActive] = useState(0);
-    const langs = [
-        { name: "EN", value: "en" },
-        { name: "RU", value: "ru" },
-        { name: "UZ", value: "uz" },
-    ]
-
-    const handleLanguageChange = (e) => {
-        i18n.changeLanguage(e)
     }
     return (
         <>
@@ -123,22 +98,22 @@ function Home() {
                 <div className='home_overlay'></div>
                 <div className='home_wrapper'>
                     <div className='home_mid'>
-                        <h1>ISLOM KARIMOV</h1>
-                        <h2>NOMIDAGI SAN'AT SAROYI</h2>
+                        <h1>{t("home_title")}</h1>
+                        <h2>{t("home_subtitle")}</h2>
                     </div>
                 </div>
             </section>
             <section className='about' id='about'>
                 <div className='about_layout'>
-                    <h2 className='page_title'>Biz Haqimizda</h2>
+                    <h2 className='page_title'>{t("about_title")}</h2>
                     <ul className='home_tour-wrapper'>
                         {tours.map((tour, i) => (
                             <li
-                                key={i}
-                                style={{ backgroundImage: `url(${tour.img})` }}
-                                role="button"
-                                className={`home_tour-item ${tourActive === i ? 'active' : ''}`}
-                                onClick={() => setTourActive(i)}
+                            key={i}
+                            style={{ backgroundImage: `url(${tour.img})` }}
+                            role="button"
+                            className={`home_tour-item ${tourActive === i ? 'active' : ''}`}
+                            onClick={() => setTourActive(i)}
                             >
                                 <h3 className='home_tour-subtitle'>{tour.title}</h3>
                                 <div className="section-content">
@@ -147,7 +122,7 @@ function Home() {
                                             <h2 className='home_tour-title'>{tour.title}</h2>
                                             <p className='home_tour-descr'>{tour.subtitle}</p>
                                             <div className='home_tour-block'>
-                                                <a href='tel:+998913050205'> Biz bilan bog'lanish </a>
+                                                <a href='tel:+998913050205'> {t("contact_button")} </a>
                                             </div>
                                         </div>
                                     </div>
@@ -158,13 +133,9 @@ function Home() {
                 </div>
             </section>
             <section className='concerts' id='concerts'>
-                <div className='page_title'>Kelayotgan Konsertlar</div>
+                <div className='page_title'>{t("concert_title")}</div>
                 <div className='concerts_wrapper'>
-                    {
-                        concerts.map(concert =>(
-                            <Card title = {concert.title} date = {concert.date} time = {concert.time} img = {concert.img} />
-                        ))
-                    }
+                    {showData()}
                 </div>
             </section>
         </>

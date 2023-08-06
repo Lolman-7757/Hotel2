@@ -1,9 +1,8 @@
 {
-    "about_title": "About Us",
-    "amenity_title": "Amenities",
-    "gallery_title": "Gallery",
-    "packages_title": "Packages",
-    "booking_title": "Booking",
-    "address": "Samarqand,Nurobod reg,Nurbuloq st.",
+    "footer_title": "Contacts",
+    "appeal": "Appeal",
+    "address_title": "Address",
+    "address_info": "Fargona city, Yuksalish st.59",
+    "map": "See on map",
     "copyright": "Website development and support"
 }
